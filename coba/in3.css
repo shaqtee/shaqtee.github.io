@@ -1,0 +1,117 @@
+body {
+    font: 16px/28px arial, san-serif;
+    background-color: #eaeaea;
+    color: #333;
+    background-image: url(../img/bgim.png);
+}
+
+.container {
+    width: 960px;
+    margin: auto;
+    background-color: #fff;
+
+}
+
+.header {
+    padding: 20px;
+}
+
+.header .judul {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.header ul li {
+    display: inline-block;
+    margin-top: 10px;
+} 
+
+.header a {
+    text-decoration: none;
+    color: salmon;  
+}
+
+.header a:hover {
+    background-color: lightskyblue;
+}
+
+.hero {
+    height: 320px;
+    background-image: url(../img/CK3.png);
+    background-size: cover;
+    background-position: 0px -120px;
+    border-bottom: 5px solid lightskyblue;
+    border-top: 5px solid salmon;
+}
+
+.main {
+    width: 450px;
+    padding: 20px;
+    //antisipasi pengaruh ukuran padding.
+    box-sizing: border-box;
+    //efek float tidak merespons div butuh micro clearfix file dibawah-tambahkan cf di class.
+    float: left;
+}
+
+/* sidebar */
+.sidebar {
+    width: 300px;
+    float: right;
+}
+
+.sidebar img {
+    width: 300px;
+    float: left;
+    position: absolute;
+    bottom: 100px;
+    top: 579px;
+    right:300px;
+}
+
+
+.main h2 {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.main .penulis {
+    font-size: 15px;
+    margin-top: 5px;
+}
+
+.main .penulis a {
+    color: salmon;
+    text-decoration: none;
+}
+
+.main p {
+    margin-bottom: 20px;
+    font-size: 13px;
+}
+
+.footer {
+    padding: 3px;
+    background-color: #333;
+}
+
+.copy {
+    color: #eaeaea;
+    text-align: center;
+    font-size: 15px;
+}
+
+
+/*  Clear Float */
+.cf:before,
+.cf:after {
+    content: " ";
+    display: table; 
+}
+
+.cf:after {
+    clear: both;
+}
+
+.cf {
+    *zoom: 1;
+}
